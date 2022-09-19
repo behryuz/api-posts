@@ -18,5 +18,5 @@ use Illuminate\Support\Facades\Route;
 Route::apiResource('/posts', PostController::class)->middleware('tag_to_lowercase');
 
 Route::get('/test', function () {
-    return 'Salom Aliakbar';
+    return 'Salom Aliakbars';
 });
