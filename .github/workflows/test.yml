@@ -10,5 +10,7 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v3
-      - name: run Makefile
-        run: make deploy
+      - name: check pwd
+        run: pwd
+      #- name: run Makefile
+      #  run: make deploy
