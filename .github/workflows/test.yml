@@ -1,0 +1,14 @@
+name: Deploy main
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: [ self-hosted, test-label ]
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
+      - name: run Makefile
+        run: make deploy
