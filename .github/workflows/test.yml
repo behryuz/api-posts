@@ -10,5 +10,5 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v3
-      - name: run Makefile
+      - name: run Makefile test
         run: cd /var/www/posts && make deploy
